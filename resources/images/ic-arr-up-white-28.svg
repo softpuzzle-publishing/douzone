@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.707" height="39.061" viewBox="0 0 46.707 39.061">
+    <defs>
+        <filter id="합치기_3" width="46.707" height="39.061" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:none}
+        </style>
+    </defs>
+    <g id="ic_arr_up_white_28" transform="translate(-1846.646 -905.292)">
+        <path id="area" d="M0 0H28V28H0z" class="cls-1" transform="translate(1856 916)"/>
+        <g id="그룹_13203">
+            <g filter="url(#합치기_3)" transform="translate(1846.65 905.29)">
+                <path id="합치기_3-2" fill="none" stroke="#fff" d="M-1.75 22.25l8-8-8 8 8 8z" transform="rotate(90 15.57 30.03)"/>
+            </g>
+            <g id="사각형_381" fill="#fff" stroke="#fff" transform="translate(1869.5 918)">
+                <path stroke="none" d="M0 0H1V24H0z"/>
+                <rect height="23" x=".5" y=".5" class="cls-1"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="ic_arr_down_24" transform="translate(2 2)">
+        <path id="area" fill="none" d="M0 0H24V24H0z" transform="translate(-2 -2)"/>
+        <g id="그룹_300" transform="rotate(180 8.072 6.5)">
+            <path id="선_45" d="M6 0L0 6" class="cls-2"/>
+            <path id="선_46" d="M0 0L6 6" class="cls-2" transform="translate(6)"/>
+        </g>
+    </g>
+</svg>

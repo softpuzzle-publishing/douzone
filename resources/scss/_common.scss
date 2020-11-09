@@ -1,0 +1,167 @@
+[class^=icon-]{display: inline-block;background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;}
+.icon-stock-blue{background-image: url('../images/ic-stock-arr-blue.svg');width: 16px;height: 16px;}
+.icon-stock-red{background-image: url('../images/ic-stock-arr-red.svg');width: 16px;height: 16px;}
+.icon-logo-gray{background-image: url('../images/lg-douzone-gray.svg');width: 150px;height: 24px;}
+.icon-logo-white{background-image: url('../images/lg-douzone-white.svg');width: 150px;height: 24px;}
+.icon-logo-color{background-image: url('../images/lg-douzone-color.svg');width: 150px;height: 24px;}
+.icon-home{background-image: url('../images/ic-home.svg');width: 11px;height: 12px;}
+
+.top{
+    height:424px;display:flex;align-items:center;justify-content:center;flex-flow:column;text-align:center;background-position: 50% 50%;background-size:cover;background-repeat: no-repeat;padding-bottom: 35px;
+    h2{
+        text-align:center;font-size:44px;color:#fff;line-height:1.47;position:relative;font-weight:700;
+        &::before{content:'';display:inline-block;vertical-align:top;border:5px solid #fff;border-radius:100%;width:20px;height:20px;margin-right:3px}
+    }
+    p{font-size:18px;color:#fff;margin-top:18px}
+
+    &.top-about{background-image:url('../images/img-sub-kv-01.png');}
+    &.top-management{background-image:url('../images/img-sub-kv-02.png');}
+    &.top-business{background-image:url('../images/img-sub-kv-03.png');}
+}
+.pd-110{padding:110px 0 !important;}
+.p-t-110{padding-top:110px !important;}
+.m-b-40{margin:0 0 40px 0 !important;}
+.skrollable{position:fixed}
+
+.tab{
+    display: flex;margin-top: -35px;
+    li{
+        flex: 1 1 auto;position:relative;
+        a{display:flex;height:70px;font-size:18px;align-items:center;justify-content:center;background:#f2f3f4}
+        &.active:before,
+        &.active + li:before{display:none}
+        &.active a{background-image: linear-gradient(115deg, #00a4ed 3%, #1471ef 105%);color:#fff;font-weight:700}
+    }
+    li + li:before{position:absolute;content:'';display:block;width:1px;height:16px;background:#d9d9d9;top:50%;left:0;margin-top:-8px}
+}
+
+.sub-tab{
+    display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5e5;position:relative;margin-top: 43px;
+    li{
+        width:100%;position:relative;
+        a{display:flex;align-items:center;justify-content:center;width:100%;height:59px;color:#262626}
+        &.active:after{position:absolute;bottom:-1px;width:100%;height:2px;background:#00aaf0;left:0;content:''}
+        &.active a{color:$primary;font-weight:700}
+    }
+    li + li:before{position:absolute;content:'';display:block;width:1px;height:16px;background:#e5e5e5;top:50%;left:0;margin-top:-8px}
+}
+
+.title-area{
+    margin-bottom:67px;position:relative;text-align: center;
+    em{display:block;color:#00aaf0;font-size:18px;line-height:27px;font-weight:500;margin-bottom:4px}
+    .title{color:#000;font-size:42px;line-height:62px;font-weight:500}
+}
+
+.title-desc{
+    font-size:28px;font-weight:500;line-height:1.64;position:relative;text-align: center;letter-spacing: -0.7px;
+    &::before{content:'';display:inline-block;vertical-align:top;border:5px solid #00aaf0;border-radius:100%;width:18px;height:18px;margin-right:3px;transform: translateY(-5px);}
+}
+.contents{
+    section{
+        padding: 110px 0 160px;
+        &.section-top{padding-bottom: 110px;}
+    }
+}
+
+.section-bg{background: #f8f9fa;}
+.section-title{text-align: center;font-size: 28px;font-weight: 500;line-height: 1.71;letter-spacing: -0.7px;margin-bottom: 40px;}
+.section-text{text-align: center;font-size: 18px;line-height: 1.89;color: #262626;margin: 40px 0;}
+
+.btn-outline-white:not(:disabled):not(.disabled):active,
+.btn-outline-white:not(:disabled):not(.disabled).active,
+.show > .btn-outline-white.dropdown-toggle{
+    background: transparent;
+}
+.btn-outline-white{
+    width:180px;height:60px;font-size:18px;padding: 17px 0.75rem;background: transparent;
+    &:hover,
+    &:focus,
+    &:active{background-image: linear-gradient(117deg, #00a4ed 8%, #1471ef 91%);border-image: linear-gradient(117deg, #00a4ed 8%, #1471ef 91%);color: #fff !important;background-color: transparent;}
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle{
+    background: transparent;
+}
+.btn-outline-primary{
+    background: transparent;
+    &:hover,
+    &:focus,
+    &:active{color: #fff !important;background-color: $primary;}
+}
+
+//card
+.card-box{
+    box-shadow: 10px 10px 30px 0 rgba(3, 4, 5, 0.2);
+    background-image: linear-gradient(135deg, #00a4ed 3%, #1471ef 97%);
+}
+.border-line-text{
+    font-size:18px;
+    color: $blue;
+    line-height: 1.44;
+    letter-spacing: -0.45px;
+    position: relative;
+    text-align: center;
+    padding-bottom:15px;
+    &.partner{
+        height: 70px;
+    }
+    &::after{
+        content:"";
+        width: 26px;
+        height: 2px;
+        background-color: $blue;
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translate(-50% , 0);
+    }
+}
+
+.btn-download{
+    width: 305px;
+    height: 64px;
+    background-color: #272a33;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:$white;
+    margin: 80px auto 50px;
+    .ic-down{
+        display:block;
+        width: 28px;
+        height: 28px;
+        background-image: url('../../resources/images/ic_download_white_28.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:5px 0 0 8px;
+    }
+}
+.btn-move{
+    width: 240px;
+    height: 64px;
+    background-color: #272a33;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:$white;
+    margin : 0 10px;
+    .ic-move{
+        display:block;
+        width: 28px;
+        height: 28px;
+        background-image: url('../../resources/images/ic_external_white_24.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0 0 0 8px;
+    }
+    &.white{
+        background-color: $white;
+        color: $gray-900;
+        border:1px solid #272a33;
+        .ic-move{
+            background-image: url('../../resources/images/ic_external_24.png');
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
+    <defs>
+        <filter id="lj2nkoli4a" width="98" height="98" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="7kv76hjnfb" width="41.333" height="48" x="31.111" y="25.555" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#lj2nkoli4a)" transform="translate(9.704 7.087) translate(-9.7 -7.09)">
+            <g fill="rgba(0,0,0,0.1)" stroke="#fff" stroke-width="3px" transform="translate(9 6)">
+                <circle cx="40" cy="40" r="40" stroke="none"/>
+                <circle cx="40" cy="40" r="38.5" fill="none"/>
+            </g>
+        </g>
+        <g filter="url(#7kv76hjnfb)" transform="translate(9.704 7.087) translate(-9.7 -7.09)">
+            <path fill="#fff" d="M14.159 1.308a1 1 0 0 1 1.682 0L29.01 21.793a1 1 0 0 1-.841 1.541H1.832a1 1 0 0 1-.842-1.541z" transform="rotate(90 15.945 47.495)"/>
+        </g>
+    </g>
+</svg>
