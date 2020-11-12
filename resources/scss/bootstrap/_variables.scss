@@ -14,7 +14,7 @@ $gray-500: #adb5bd !default;
 $gray-600: #7B7B7B !default;
 $gray-700: #4b4e53 !default;
 $gray-800: #343a40 !default;
-$gray-900: #262626 !default;
+$gray-900: #272a33 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -79,7 +79,7 @@ $info:          $orange !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-400 !default;
-$dark:          $gray-700 !default;
+$dark:          $gray-900 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

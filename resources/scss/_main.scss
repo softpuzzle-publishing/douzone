@@ -2,6 +2,58 @@
     .section{position:relative;text-align: center;}
     .fp-tableCell{padding-top: 85px;}
 }
+
+#mouse-scroll {
+    position: absolute;left: 50%;bottom: 120px;-webkit-transform: translateX(-50%);z-index: 9999;text-align: center;
+    .mouse {
+        display: inline-block;vertical-align: top;width: 28px;height: 44px;border-radius: 69px;-webkit-transform: none;-ms-transform: none;transform: none;border: 1px solid #fff;
+    }
+    .mouse-in {
+        height: 10px;
+        width: 2px;
+        display: inline-block;
+        margin: 9px 0 0;
+        background: #fff;
+        position: relative;
+        -webkit-animation: animated-mouse 1.2s ease infinite;
+    }
+    .text{color: #fff;font-size: 11px;font-weight: 700;text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);text-align: center;line-height: 2.36;margin-top: 4px;}
+    .arr{margin-top: -2px;}
+    span {
+        display: inline-block;width: 10px;height: 10px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-right: 1px solid #fff;border-bottom: 1px solid #fff;box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    .hidden {opacity:0; }
+}
+@-webkit-keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+         opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+@-webkit-keyframes mouse-scroll {
+    0% {opacity: 1;}
+    50% {opacity: .5;}
+    100% {opacity: 1;}
+}
+@keyframes mouse-scroll {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
 #fp-nav{
 	ul{
 		li{
@@ -135,8 +187,8 @@
     }
 
     .swiper-pagination{text-align: center;width: 100%;position: static;margin-top: 58px;line-height: 1;}
-    .swiper-pagination-bullet{width: 12px;height: 12px;background: #cdcdcd;opacity: 1;margin: 0 5px;border-radius: 0;vertical-align: top;}
-    .swiper-pagination-bullet-active{background: $primary;}
+    .swiper-pagination-bullet-management{width: 12px;height: 12px;background: #cdcdcd;opacity: 1;margin: 0 5px;border-radius: 0;vertical-align: top;}
+    .swiper-pagination-bullet-management-active{background: $primary;}
 }
 
 .main-stock{

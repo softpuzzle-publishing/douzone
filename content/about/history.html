@@ -39,10 +39,10 @@
 
 		<div class="container">
 			<ul class="tab">
-				<li class="active"><a href="#">회사소개</a></li>
+				<li class="active"><a href="../about/company.html">회사소개</a></li>
 				<li><a href="#">CEO 인사말</a></li>
 				<li><a href="#">계열사</a></li>
-				<li><a href="#">사업장 소개</a></li>
+				<li><a href="../about/location_gangchon.html">사업장 소개</a></li>
 				<li><a href="#">고객지원</a></li>
 			</ul>
 
@@ -56,8 +56,8 @@
 			</nav>
 
 			<ul class="sub-tab">
-				<li><a href="company.html">회사소개</a></li>
-				<li class="active"><a href="history.html">연혁</a></li>
+				<li><a href="../about/company.html">회사소개</a></li>
+				<li class="active"><a href="../about/history.html">연혁</a></li>
 				<li><a href="#">비전</a></li>
 				<li><a href="#">경영철학</a></li>
 				<li><a href="#">지적재산권</a></li>
@@ -68,6 +68,9 @@
 
 		<div class="contents">
 			<section class="section-top">
+				<div class="object">
+					<span class="shape-history-1" data-0="top:72px;" data-400-top="top:-100px;" data--300-top="top:-300px;"></span>
+				</div>
 				<div class="container">
 					<div class="title-area">
 						<em>History</em>
@@ -78,18 +81,23 @@
 			</section>
 
 			<div class="history-wrap">
-				<div class="history-visual visual-2020">
+				<div class="object">
+					<span class="shape-history-2" data-800-top="top:1508px;" data-600-top="top:1308px;" data-0-top="top:700px;"></span>
+				</div>
+
+				<div class="history-visual visual-2020">2
 					<span>현재</span>
 					<p>대한민국 ICT산업의 역사를 새롭게 써 내려가는 더존</p>
 				</div>
 				<div class="container">
-					<div class="history in" data-event="revealed">
+					<div class="history history-1 in" data-event="revealed">
 						<div class="year">
 							<span>2</span>
 							<span>0</span>
 							<span>2</span>
 							<span>0</span>
 						</div>
+
 						<dl class="history-list">
 							<dt>2020</dt>
 							<dd>
@@ -140,7 +148,7 @@
 					<em>파이낸스아시아 ‘Asia’s Best Companies’ 선정 (韓 최고 경영기업 7위)</em>
 				</div>
 				<div class="container">
-					<div class="history in" data-event="revealed">
+					<div class="history history-2 in" data-event="revealed">
 						<div class="year">
 							<span>2</span>
 							<span>0</span>
@@ -182,7 +190,7 @@
 					<p>디지털 포렌식 사업 수출 모델을 국내 최초로 기획하여 <br>해외시장 진출의 교두보를 마련하다</p>
 				</div>
 				<div class="container">
-					<div class="history">
+					<div class="history history-3 in" data-event="revealed">
 						<div class="year">
 							<span>2</span>
 							<span>0</span>
@@ -230,7 +238,7 @@
 					<p>국내 최초 기업 전용 D-CLOUD 센터 구축과 함께 <br>친환경 경영을 실현하다</p>
 				</div>
 				<div class="container">
-					<div class="history in" data-event="revealed">
+					<div class="history history-4 in" data-event="revealed">
 						<div class="year">
 							<span>2</span>
 							<span>0</span>
@@ -323,7 +331,7 @@
 					<p>도전과 혁신으로 시작된 더존</p>
 				</div>
 				<div class="container">
-					<div class="history in" data-event="revealed">
+					<div class="history history-5 in" data-event="revealed">
 						<div class="year">
 							<span>2</span>
 							<span>0</span>
@@ -384,6 +392,9 @@
 					if($(window).scrollTop()+200 >= $this.offset().top){
 						$('.history').removeClass('disappear');
 						$history.addClass('disappear');
+					}
+					if($(window).scrollTop()+200 < $('.history:first-of-type').find('dd:last-of-type').find('li:last-child').offset().top){
+						$('.history').removeClass('disappear');
 					}
 				});
 			});

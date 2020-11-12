@@ -1,12 +1,14 @@
-html,body {width:100%;height:100%;-webkit-text-size-adjust:none;}
-body{overflow-x:hidden}
+html,body {width:100%;height:100%;-webkit-text-size-adjust:none;/* -webkit-font-smoothing: antialiased */}
+body{overflow-x:hidden;min-width: 1230px;}
 
 $header-z-index: 999;
+
+.wrap{width: 100%;}
 
 .header{
     position:fixed;top:0;left:0;z-index: $header-z-index;width:100%;;-webkit-transition:all .4s;transition:all .4s;background:#fff;
 
-    .header-top{position: relative;border-bottom: 1px solid rgba(255, 255, 255, 0.2);background: #fff;}
+    .header-top{position: relative;border-bottom: 1px solid rgba(255, 255, 255, 0.2);background: #fff;min-width: 1230px;}
     .header-bottom{
         width: 100%;background: #fff;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;overflow: hidden;position: absolute;left: 0;bottom:0;z-index: -1;transition: bottom .4s;
     }
@@ -66,7 +68,7 @@ html.is-scroll-up {
 
 
 .footer{
-    text-align: left;
+    text-align: left;background: #fff;position: relative;
     .footer-top{height: 80px;border-top: 1px solid #e5e5e5;
         .container{position: relative;height: 100%;}
     }
@@ -96,4 +98,26 @@ html.is-scroll-up {
     position: fixed;right:-100px;bottom:20px;z-index: 100;transition:right .4s .3s ease-out, background-color .2s;
     html.is-scrolled &{right: 20px;}
     &:hover{background-color: #4b4e53;}
+}
+
+.object{
+    [class^=shape-]{position: absolute;z-index: 0;display: inline-block;}
+
+    .shape-intro-1{width: 656px;height: 979px;background: url('../images/img-intro-shape-01.png') no-repeat 0 100%;right: 0;bottom: 79px;}
+    .shape-intro-2{width: 365px;height: 435px;background: url('../images/img-intro-shape-02.png') no-repeat 100% 0;left: 0;top: 0;}
+
+    .shape-history-1{width: 409px;height: 979px;background: url('../images/img-history-shape-01.png') no-repeat 0 0;right: 0;top: 72px;}
+    .shape-history-2{width: 578px;height: 871px;background: url('../images/img-history-shape-02.png') no-repeat 100% 0;left: 0;top: 1508px;}
+
+    .shape-business-1{width: 235px;height: 259px;background: url('../images/img-business-shape-01.png') no-repeat 0 0;left: 0;top: 558px;}
+    .shape-business-2{width: 588px;height: 874px;background: url('../images/img-business-shape-02.png') no-repeat 0 0;right: 0;bottom: -370px;}
+
+    .shape-digital-1{width: 309px;height: 381px;background: url('../images/img-digital-shape-01.png') no-repeat 0 0;right: 0;top: -177px;}
+    .shape-digital-2{width: 320px;height: 613px;background: url('../images/img-digital-shape-02.png') no-repeat 100% 0;left: 0;bottom: -327px;}
+
+    .shape-edu-1{width: 492px;height: 492px;background: url('../images/img-edu-shape-01.png') no-repeat 0 0;right: 60px;top: -97px;}
+    .shape-edu-2{width: 264px;height: 253px;background: url('../images/img-edu-shape-02.png') no-repeat 0 0;left: 71px;top: 52px;}
+
+    .shape-ethical-1{width: 257px;height: 359px;background: url('../images/img-ethical-shape-01.png') no-repeat 0 0;right: 0;top: 836px;}
+    .shape-ethical-2{width: 438px;height: 651px;background: url('../images/img-ethical-shape-02.png') no-repeat 100% 0;left: 0;bottom: -370px;}
 }
