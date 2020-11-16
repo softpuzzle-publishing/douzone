@@ -229,17 +229,18 @@
     .btn{margin:40px auto 0;}
 }
 
+/* 201116 수정 */
 body.body-main{
     .header{
         background:transparent;transform: translateY(0) !important;
         .header-top{background: transparent;}
         .header-bottom{display: none !important;}
         .logo .icon-logo{background-image:url('../images/lg-douzone-white.svg');}
-        .gnb li a{color:#fff}
-        .util > a{background:#fff;color:#000}
-        .util > button{border-color:#fff;color:#fff}
-        .util > button:after{background:url('../images/ic_dropdown_arr_down_white.png') no-repeat 50% 50%}
-        .util > button:hover:after{background:url('../images/ic_dropdown_arr_up_white.png') no-repeat 50% 50%}
+        .gnb > ul > li > a{color:#fff}
+        .util .btn-solution a{background:#fff;color:#000}
+        .util .btn-lang button{border-color:#fff;color:#fff}
+        .util .btn-lang button::after{background:url('../images/ic_dropdown_arr_down_white.png') no-repeat 50% 50%}
+        .util .btn-lang.active button::after{background:url('../images/ic_dropdown_arr_up_white.png') no-repeat 50% 50%}
     }
 }
 body.fp-viewing-section1{
@@ -250,17 +251,18 @@ body.fp-viewing-section3{
     .header{
         background:#fff;
         .logo .icon-logo{background-image:url('../images/lg-douzone-color.svg');}
-        .gnb ul li a{color:#000}
-        .util > button{border-color:#000;color:#000}
-        .util > button:after{background:url('../images/ic_dropdown_arr_down.png') no-repeat 50% 50%;}
-        .util > button:hover:after{background:url('../images/ic_dropdown_arr_up.png') no-repeat 50% 50%;}
-        .util > a{background:#00aaf0;color:#fff}
+        .gnb > ul > li > a{color:#000}
+        .util .btn-lang button{border-color:#000;color:#000}
+        .util .btn-lang button::after{background:url('../images/ic_dropdown_arr_down.png') no-repeat 50% 50%;}
+        .util .btn-solution a{background:#00aaf0;color:#fff}
     }
     .main-title{color:#000;}
     .main-desc{color:rgba(0,0,0,0.5);}
     #fp-nav ul li .fp-tooltip{color:#000}
     #fp-nav ul li a span{border: 1px solid #000;opacity: 0.2;}
 }
+
+/* //201116 수정 */
 
 body.fp-viewing-section5{
     .header{transform: translateY(-100px) !important;}

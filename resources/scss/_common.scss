@@ -1,4 +1,4 @@
-[class^=icon-]{display: inline-block;background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;}
+[class^=icon-]{display: inline-block;background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;font-size: 0;line-height: 1;}
 .icon-stock-blue{background-image: url('../images/ic-stock-arr-blue.svg');width: 16px;height: 16px;}
 .icon-stock-red{background-image: url('../images/ic-stock-arr-red.svg');width: 16px;height: 16px;}
 .icon-logo-gray{background-image: url('../images/lg-douzone-gray.svg');width: 150px;height: 24px;}
@@ -11,6 +11,8 @@
 .icon-marker{background-image: url('../images/ic-place.svg');width: 24px;height: 24px;}
 .icon-car{background-image: url('../images/ic-car.svg');width: 24px;height: 24px;}
 .icon-bus{background-image: url('../images/ic-bus.svg');width: 24px;height: 24px;}
+/* 201116 추가 */
+.icon-close-white{background-image: url('../images/ic-close-white-60.svg');width: 24px;height: 24px;}
 
 .top{
     height:424px;display:flex;align-items:center;justify-content:center;flex-flow:column;text-align:center;background-position: 50% 50%;background-size:cover;background-repeat: no-repeat;padding-bottom: 35px;

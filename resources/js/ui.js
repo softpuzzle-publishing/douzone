@@ -22,6 +22,8 @@ var Init = {
 				$('html').addClass('is-scroll-up');
 			}
 
+			console.log(_direction);
+
 			window.__scrollPosition = _documentY; // Update scrollY
 		});
 	},
@@ -62,6 +64,10 @@ var Init = {
 
 var Header = {
 	init : function(){
+		/* 201116 수정 */
+		this.gnb();
+		this.lang();
+		this.sitemap();
         this.scrolling();
 		window.addEventListener('mousewheel', Header.scrolling);
 		window.addEventListener('touchmove', Header.scrolling);
@@ -95,6 +101,47 @@ var Header = {
 			}
 		}
 	},
+	/* 201116 추가 */
+	gnb : function(e){
+		$('.gnb > ul > li > a').on('mouseenter focus',function(){
+			$(this).closest('li').siblings().find('.gnb-sub-group').hide();
+			$(this).next('.gnb-sub').fadeIn(0);
+			$(this).next('.gnb-sub').find('.gnb-sub-group').fadeIn(150);
+		});
+		$('.gnb').on('mouseleave',function(){
+			$(this).find('.gnb-sub').fadeOut(150);
+			$(this).find('.gnb-sub-group').fadeOut(150);
+		});
+		$('.gnb > ul > li:last-child .depth2 li:last-child').on('focusout',function(){
+			$(this).find('.gnb-sub').fadeOut(150);
+			$(this).find('.gnb-sub-group').fadeOut(150);
+		});
+	},
+	lang: function(e){
+		$('.btn-lang button').on('mouseenter focus',function(){
+			$('.btn-lang').addClass('active');
+		});
+		$('.btn-lang').on('mouseleave',function(){
+			$('.btn-lang').removeClass('active');
+		});
+		$('.lang li:last-child').on('focusout',function(){
+			$('.btn-lang').removeClass('active');
+		});
+	},
+	sitemap: function(e){
+		$('.gnb .gnb-sub').each(function(){
+			$('.sitemap-body').append($(this).html());
+		});
+		$('.all').on('click',function(e){
+			e.preventDefault();
+			$('html').addClass('sitemap-open');
+		});
+		$('.sitemap .close').on('click',function(){
+			$('.sitemap-body').scrollTop(0);
+			$('html').removeClass('sitemap-open');
+		});
+	}
+	/* //201116 수정 */
 };
 
 var Common = {
@@ -161,13 +208,13 @@ $(function() {
 
 	Init.defaults();
 
-	$(window).on('load', function(){
+	//$(window).on('load', function(){
 		Common.init();
 		Header.init();
 
 		$('select').selectmenu();
 
 		skrollr.init();
-	});
+	//});
 
 });
